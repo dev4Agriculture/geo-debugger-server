@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "a63cbd47-e16c-4aea-975f-929bb1904837",
+		"name": "geodebugger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "polygons",
+			"item": [
+				{
+					"name": "Set Polygon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"FeatureCollection\",\r\n    \"features\": [\r\n        {\r\n            \"type\": \"Feature\",\r\n            \"geometry\": {\r\n                \"type\": \"Polygon\",\r\n                \"coordinates\": [\r\n                    [\r\n                        [\r\n                            -104.99874585046724,\r\n                            40.295218204306\r\n                        ],\r\n                        [\r\n                            -104.99874585075202,\r\n                            40.295400697847576\r\n                        ],\r\n                        [\r\n                            -104.99878113439293,\r\n                            40.295400697809924\r\n                        ],\r\n                        [\r\n                           -104.99878113401324,\r\n                            40.295218204268345\r\n                        ],\r\n                        [\r\n                            -104.99874585046724,\r\n                            40.295218204306\r\n                        ]\r\n                    ]\r\n                ]\r\n            },\r\n            \"properties\": {}\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/put/polygons/{{polygon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"put",
+								"polygons",
+								"{{polygon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clear Polygon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"FeatureCollection\",\r\n    \"features\": [\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/put/polygons/{{polygon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"put",
+								"polygons",
+								"{{polygon}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Polygon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/get/polygons/{{polygon}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get",
+								"polygons",
+								"{{polygon}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "points",
+			"item": [
+				{
+					"name": "Set Points",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"FeatureCollection\",\r\n    \"features\": [\r\n        {\r\n            \"type\": \"Feature\",\r\n            \"geometry\": {\r\n                \"type\": \"Point\",\r\n                \"coordinates\": [\r\n                    \r\n                            -104.99874585046724,\r\n                            40.295218204306\r\n                ]\r\n            },\r\n            \"properties\": {}\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/put/points/{{point}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"put",
+								"points",
+								"{{point}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Points",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/get/points/{{point}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get",
+								"points",
+								"{{point}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lines",
+			"item": [
+				{
+					"name": "Set Lines",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"FeatureCollection\",\r\n    \"features\": [\r\n        {\r\n            \"type\": \"Feature\",\r\n            \"geometry\": {\r\n                \"type\": \"Line\",\r\n                \"coordinates\": [\r\n                        [\r\n                            -104.99874585046724,\r\n                            40.295218204306\r\n                        ],\r\n                        [\r\n                            -104.99874585075202,\r\n                            40.295400697847576\r\n                        ],\r\n                        [\r\n                            -104.99878113439293,\r\n                            40.295400697809924\r\n                        ],\r\n                        [\r\n                           -104.99878113401324,\r\n                            40.295218204268345\r\n                        ],\r\n                        [\r\n                            -104.99874585046724,\r\n                            40.295218204306\r\n                        ]\r\n                ]\r\n            },\r\n            \"properties\": {}\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/put/lines/{{line}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"put",
+								"lines",
+								"{{line}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/get/lines/{{line}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get",
+								"lines",
+								"{{line}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clear Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"FeatureCollection\",\r\n    \"features\": [\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/clear",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetData Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/get/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Overview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/info",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

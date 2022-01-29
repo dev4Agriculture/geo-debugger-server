@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+html, body, #container, #map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Lato";
+}
+.toolbox {
+  position: absolute;
+  background: rgba(255,255,255, 0);
+  border-radius: 1rem;
+  top: 1vh;
+  right: 1vw;
+  min-width: 20rem;
+  max-width: 30rem;
+  z-index: 2;
+  overflow-wrap: break-word;
+  text-align: center;
+  padding: 0 0 3rem 0;
+  text-align: center;
+}
+.kpi {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.label {
+  font-size: 1.5rem;
+}
+.box-1 {
+  background-color: #ffa45b; 
+}
+.box-2 {
+  background-color: #ffda77; 
+}
+.box-3 {
+  background-color: #fbf6f0; 
+}
+.box-4 {
+  background-color: #aee6e6; 
+}
+
+.open-sans {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.current-location {
+  font-size: 2em;
+  line-height: 1.6;
+  min-height: 5rem;
+  padding: 0.75rem;
+}
+
+.start-button-area{
+  display: initial
+}
+
+
+.btn {
+  font-size: 1.3em;
+  display: block;
+  float: left;
+  padding: 0.3rem 0;
+  border-width: 0;
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  transition: background-color .3s;
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0;  
+  transition: background-color .3s;
+  height: 100%;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(236, 240, 241, .3);
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+
+h2 {
+  font-weight: normal;
+}
+
+.btn.orange {
+  background-color: #e67e22;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+  background-color: #d35400;
+}
+
+.btn.red {
+  background-color: #e74c3c;
+}
+
+.btn.red:hover, .btn.red:focus {
+  background-color: #c0392b;
+}
+.footer-bar {
+  position: absolute;
+  bottom: 0;
+  height: 3rem;
+  width: 100%;
+}
+
+.svg-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #000;
+}
+
+.svg-icon circle {
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.lds-dual-ring {
+  display: inline-table;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: inline-table;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid black;
+  border-color: #2ecc71 transparent #2ecc71  transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+.lds-dual-ring:before {
+margin-left: 2rem;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.start-section {
+  display: block;
+  overflow: hidden;
+}
+#locate-me {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 3;
+  top: 1vh;
+  left: 1vw;
+  padding: 0;
+}
+#auto-zoom {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 3;
+  top: 13.5vh;
+  left: 1vw;
+  padding: 0;
+}
+
+#layer-selection {
+  display: none;
+  background-color: #efefef;
+  position:absolute;
+  height: 20rem;
+  width: 4rem;
+  top: 15vh;
+  left: 6rem;
+  z-index: 3;
+}
+
+#select-points {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 3;
+  top: 23.5vh;
+  left: 1vw;
+  padding: 0;
+}
+#select-lines {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 3;
+  top: 33.5vh;
+  left: 1vw;
+  padding: 0;
+}
+#select-polygons {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 3;
+  top: 43.5vh;
+  left: 1vw;
+  padding: 0;
+}
+#locate-me .svg-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+#layer {
+  position: absolute;
+  height: 1.5rem;
+  width: 3rem;
+  z-index: 3;
+  top: 55vh;
+  left: 1vw;
+  padding:0;
+}
