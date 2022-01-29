@@ -3,7 +3,7 @@ A simple server to forward received GeoJSON messages. It provides a simple WebUI
 
 ## About GeoDebugger
 
-The GeoDebugger is a tool to display GeoBased information. It consists of [Dotnet Nuget Pack Library](https://github.com/dev4Agriculture/geo-debugger-lib-dotnet)
+The GeoDebugger is a tool to distribute and display GeoBased information. It consists of [Dotnet Nuget Pack Library](https://github.com/dev4Agriculture/geo-debugger-lib-dotnet)
  and this server.
 
 Additionally, a Tool like e.g. [QGis](https://qgis.org/de/site/) can be used to display the data.
